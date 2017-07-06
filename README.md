@@ -15,7 +15,14 @@ a simple TagView for Swift, support single select and multiple select.
 <img src="multiple.png" width="300">
 
 
-## Single Select Usage
+##Usage
+###1.Drag the 'SMTagView.swift' to your project.
+###2.Create a UIView on storyboard or xib.
+###3.Setting the class of UIView for 'SMTagView'
+<img src="tagView_st.png" width="300">
+###4.Setting TagView:
+
+### Single Select 
 you will get the callback when user selected.
 
 ```swift
@@ -26,8 +33,8 @@ self.m_tagViewSingle.setTagForSingle(title: "你要選哪個呢 ? (單選)", tag
 }
 ```
 
-## Multiple Select Usage
-you can setting maximum select and minimum select,or just put the "nil" if you don't want set any condition,and you will get the callback when user click the 'Done' button.
+### Multiple Select
+you can setting maximum select and minimum select,or just put the "nil" if you don't want set any condition,and you will get the callback when user click the "Done" button.
 
 ```swift
 self.m_tagViewMultiple.layer.cornerRadius = 15.0
@@ -40,6 +47,8 @@ self.m_tagViewMultiple.setTagForMultiple(title: "選幾個喜歡的吧!(多選)"
 
 
 ## Custom Setting
+you can get the other style from these setting.
+
 ```swift
 var titleColor : UIColor = UIColor.darkGray
 var titleFont : UIFont = UIFont.systemFont(ofSize: 20.0)
